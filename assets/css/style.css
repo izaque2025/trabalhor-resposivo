@@ -1,0 +1,157 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  background: linear-gradient(to right, #77ff77 0%, #3ef538 0%, #24ee24 21%, #e7ff71 52%, #e00808 78%, #ec1212 100%);;
+  line-height:1,5;
+  background-image:linear-gradient(120px) ;
+}
+header{
+  background-color: rgb(210, 30, 30);
+  color: aliceblue;
+  text-align: center;
+  padding: 10px ;
+}
+header h1{
+  padding-bottom: 10px;
+}
+nav ul{
+list-style: none;
+}
+nav ul li{
+  display: inline;
+  margin: 0 15px;
+}
+nav ul li a{
+  font-weight: bold;
+  text-decoration: none;
+  color: beige;
+}
+
+.hero{
+  background-color: rgb(185, 194, 29);
+  padding: 20px;
+  text-align: center;
+  margin:10px 15px;
+}
+.content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.content article{
+  background-color: rgb(187, 193, 5);
+  padding: 20px;
+  margin: 10px;
+}
+
+img{
+    text-align: center;
+    width: 400px;
+}
+
+.saiba{
+
+  position: fixed;
+background-color: rgb(236, 236, 233);
+  width: 90px;
+  height: 20px;
+  bottom: 10px;
+  right: 10px;
+
+}
+.saiba a{
+  position: absolute;
+  text-decoration: none;
+  color: darkmagenta;
+  
+ 
+}
+
+.saiba a:hover{
+  color: rgb(25, 119, 148);
+  text-decoration: none;
+  text-decoration: underline;
+  
+}
+
+  
+footer{
+  background-color: aliceblue;
+  text-align: center;
+  padding: 10px; 
+}
+footer a{
+        color: black;
+        background-color: #009100;
+        width: 150px;
+        padding: 7px;
+        margin: 5px;
+        border-radius: 20%;
+        text-align: center;
+        text-decoration: none;
+}
+
+/*estilos para as telas menores que 768 (tabretis e emmatifone)*/
+@media (max-width:930px){
+    img{
+        width: 300px;
+        margin: 25px;
+    }
+    .content article{
+        background-color: #009100;
+    }
+    
+   
+    
+}
+
+@media (max-width:768px) {
+    img{
+        width: 350px;
+        margin-left: 75px;
+    }
+  nav ul li{
+    display: block;
+    margin: 10px 0;
+    background-color: chocolate;
+  }
+.content{
+  flex-direction: column;
+}
+
+.content article{
+  margin: 10px;
+}
+
+}
+
+/*estilos para as telas menores que 480 (tabretis e emmatifone)*/
+@media (max-width:480px) {
+    img{
+        padding: 10px;
+        width: 270px;
+        margin: 0px;
+    }
+    footer a{
+        font-size: 10px;
+    }
+  header h1{
+    font-size: 24px;
+    color: aqua;
+  }
+  .hero h2{
+    font-size: 25px;
+    background-color: cornflowerblue;
+    color: darkgoldenrod;
+
+  }
+
+  .content article h3{
+    font-size: 20px;
+    color: rgb(75, 125, 126);
+  }
+}
